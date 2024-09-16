@@ -1,20 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View, ScrollView } from 'react-native';
+import Prime from './src/telas/prime';
+import Texto from './src/components/texto';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View style={estilos.container}>
+      <ScrollView>
+        <Prime />
+        <Texto />
+      </ScrollView>
       <StatusBar style="auto" />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+const estilos = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: "#1a1a1a",
+        paddingTop: 50,
+    }
 });
