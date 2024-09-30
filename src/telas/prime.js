@@ -16,35 +16,16 @@ export default function Prime() {
                 <Text style={estilos.descricao}>
                     Lorem Ipsum é simplesmente um texto modelo da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto modelo padrão da indústria desde os anos 1500.
                 </Text>
+
                 <Text style={estilos.preco}>R$ 40,00</Text>
             </View>
 
             <View style={estilos.card}>
                 <Text style={estilos.descricao}>
-                    Lorem Ipsum é simplesmente um texto modelo da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto modelo padrão da indústria desde os anos 1500.
+                    Este é outro item da lista de compras com descrição detalhada e preço.
                 </Text>
-                <Text style={estilos.preco}>R$ 50,00</Text>
-            </View>
 
-            <View style={estilos.card}>
-                <Text style={estilos.descricao}>
-                    Lorem Ipsum é simplesmente um texto modelo da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto modelo padrão da indústria desde os anos 1500.
-                </Text>
-                <Text style={estilos.preco}>R$ 60,00</Text>
-            </View>
-
-            <View style={estilos.card}>
-                <Text style={estilos.descricao}>
-                    Lorem Ipsum é simplesmente um texto modelo da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto modelo padrão da indústria desde os anos 1500.
-                </Text>
-                <Text style={estilos.preco}>R$ 70,00</Text>
-            </View>
-
-            <View style={estilos.card}>
-                <Text style={estilos.descricao}>
-                    Lorem Ipsum é simplesmente um texto modelo da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto modelo padrão da indústria desde os anos 1500.
-                </Text>
-                <Text style={estilos.preco}>R$ 80,00</Text>
+                <Text style={estilos.preco}>R$ 75,00</Text>
             </View>
         </>
     )
@@ -52,14 +33,12 @@ export default function Prime() {
 
 const estilos = StyleSheet.create({
     topo: {
-        width: "90%",
+        width: "100%",
         height: 180,
         backgroundColor: "#18291b",
         justifyContent: "center",
         alignItems: "center",
-        marginBottom: 20,
-        borderRadius: 10,
-        marginHorizontal: 20,
+        marginBottom: 20
     },
     titleTopo: {
         fontSize: 24,
@@ -85,7 +64,11 @@ const estilos = StyleSheet.create({
         padding: 20,
         marginBottom: 20,
         marginHorizontal: 20,
-
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.8,
+        shadowRadius: 5,
+        elevation: 5,
     },
     descricao: {
         fontSize: 14,

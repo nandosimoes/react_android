@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View, ScrollView } from 'react-native';
 import Prime from './src/telas/prime';
 import Texto from './src/components/texto';
+import Contador from './src/components/contador';
+import CardNews from './src/components/cardNews';
 
 export default function App() {
   return (
@@ -9,6 +11,8 @@ export default function App() {
       <ScrollView>
         <Prime />
         <Texto />
+        <CardNews/>
+        <Contador />
       </ScrollView>
       <StatusBar style="auto" />
     </View>
