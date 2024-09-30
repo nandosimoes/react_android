@@ -10,21 +10,21 @@ export default function CardNews() {
         <View style={estilos.card}>
             <TextInput 
                 style={estilos.input} 
-                placeholder="Digite seu nome" 
+                placeholder="Digite seu nome:" 
                 value={nome} 
                 onChangeText={setNome} 
                 placeholderTextColor="#fff" 
             />
             <TextInput 
                 style={estilos.input} 
-                placeholder="Digite seu email" 
+                placeholder="Digite seu email:" 
                 value={email} 
                 onChangeText={setEmail} 
                 placeholderTextColor="#fff" 
             />
             <TextInput 
                 style={estilos.input} 
-                placeholder="Digite sua senha" 
+                placeholder="Digite sua senha:" 
                 secureTextEntry={true} 
                 value={senha} 
                 onChangeText={setSenha} 
@@ -33,7 +33,7 @@ export default function CardNews() {
             <Button title="Enviar" />
             {nome && email && senha && (
                 <Text>
-                    
+                    Nome: {nome}, Email: {email}, Senha: {senha}
                 </Text>
             )}
         </View>
